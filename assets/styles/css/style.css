@@ -1,4 +1,150 @@
-/*COULEURS*/ /**************************************** BOUTONS ****************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************** COULEURS ********************/
+/***** ACCESSIBLES *****/
+/***** AUTRES *****/
+/******************** POLICES ********************/
+/***** SANS SERIF *****/
+/*** font-family: 'Roboto', sans-serif; ***/
+/***** SERIF *****/
+/*** font-family: 'Roboto Slab', serif; ***/
+/***** MONOSPACE *****/
+/*** font-family: 'Roboto Mono', monospace; ***/
+.classic-header-layout {
+  display: grid;
+  grid-template-columns: 0.1fr 0.7fr 0.2fr;
+  grid-template-row: 1fr 1fr 1fr;
+  width: 100%;
+  max-height: 12vh;
+  padding: 1vh 2vw;
+}
+.classic-header-layout > figure {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  max-height: 10vh;
+}
+.classic-header-layout > figure > img {
+  max-height: 100%;
+  border-radius: 20px;
+}
+.classic-header-layout > figure > figcaption {
+  display: none;
+}
+.classic-header-layout > nav:first-of-type {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.classic-header-layout > nav:last-of-type {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/******************** HEADER - NAVBARS ********************/
+.main-header-navbar > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-header-navbar > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1.5vh 2vw;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+}
+.main-header-navbar > ul > li > a > span {
+  display: none;
+}
+.main-header-navbar > ul > li > a:hover {
+  border-bottom: solid 3px;
+  border-left: solid 3px;
+}
+.main-header-navbar > ul > li > a:hover > span {
+  margin-left: 1vw;
+  display: inline-block;
+}
+
+.social-header-navbar > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-header-navbar > ul > li > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+.social-header-navbar > ul > li > a > span:first-of-type {
+  margin-right: 1vw;
+}
+.social-header-navbar > ul > li > a > span:last-of-type {
+  display: none;
+}
+.social-header-navbar > ul > li > a:hover > span:last-of-type {
+  display: inline-block;
+}
+
+/**************************************** BOUTONS ****************************************/
 .btn {
   padding: 1vh 1vw;
   text-decoration: none;
@@ -129,6 +275,131 @@
     background-color: #106942;
     box-shadow: 0 0 10px 0 #106942 inset, 0 0 10px 4px #106942;
   }
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-black {
+  background-color: #242523;
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-red {
+    background-color: #ba0534;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .bg-red {
+    background-color: #fe4c54;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-blue {
+    background-color: #2d71e3;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .bg-blue {
+    background-color: #1499e7;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-green {
+    background-color: #106942;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .bg-green {
+    background-color: #3ee8a5;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-orange {
+    background-color: #d73b07;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .bg-orange {
+    background-color: #fd790f;
+  }
+}
+
+/*
+
+$lightThemeRed : #ba0534;
+$lightThemeBlue : #2d71e3;
+$lightThemeGreen : #106942;
+$lightThemeOrange : #d73b07;
+
+$darkThemeGreen: #3ee8a5;
+$darkThemeOrange : #fd790f;
+$darkThemeBlue : #1499e7;
+$darkThemeRed : #fe4c54;
+
+*/
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #242523;
+}
+
+@media (prefers-color-scheme: light) {
+  .red {
+    color: #ba0534;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .red {
+    color: #fe4c54;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .blue {
+    color: #2d71e3;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .blue {
+    color: #1499e7;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .green {
+    color: #106942;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .green {
+    color: #3ee8a5;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .orange {
+    color: #d73b07;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .orange {
+    color: #fd790f;
+  }
+}
+
+/********** WHITE LINKS FOR NAVBARS **********/
+.white-links > ul > a {
+  color: #ffffff;
+}
+.white-links > ul > li > a {
+  color: #ffffff;
 }
 
 html {

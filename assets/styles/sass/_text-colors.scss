@@ -1,0 +1,82 @@
+.white{
+    
+    color: $white;
+}
+
+.black{
+    
+    color: $black;
+}
+
+.red{
+    
+    @media (prefers-color-scheme: light){
+        
+        color: $lightThemeRed;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        color: $darkThemeRed;
+    }
+}
+
+.blue{
+    
+    @media (prefers-color-scheme: light){
+        
+        color: $lightThemeBlue;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        color: $darkThemeBlue;
+    }
+}
+
+.green{
+    
+    @media (prefers-color-scheme: light){
+        
+        color: $lightThemeGreen;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        color: $darkThemeGreen;
+    }
+}
+
+.orange{
+    
+    @media (prefers-color-scheme: light){
+        
+        color: $lightThemeOrange;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        color: $darkThemeOrange;
+    }
+}
+
+/********** WHITE LINKS FOR NAVBARS **********/
+
+.white-links{
+    
+    &>ul{
+        
+        &>a{
+            
+            color: $white;
+        }
+        
+        &>li{
+            
+            &>a{
+                
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,9 +1,14 @@
 @import "reset";
 @import "vars";
+@import "header-layouts";
+@import "nav-layouts";
 @import "buttons";
+@import "background-colors";
+@import "text-colors";
 
 html{
     
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    
 }
