@@ -1,5 +1,5 @@
 /******************** HEADER - NAVBARS ********************/
-
+/*
 .main-header-navbar{
     
     &>ul{
@@ -32,7 +32,7 @@
                     
                     &>span{
                         
-                        margin-left: 1vw;
+                        margin-left: .5vw;
                         display: inline-block;
                     }
                 }
@@ -62,17 +62,17 @@
                 
                 &>span:first-of-type{
                     
-                    margin-right: 1vw;
+                    display: none;
                 }
                 
                 &>span:last-of-type{
                     
-                    display: none;
+                    margin-left: .3vw;
                 }
                 
                 &:hover{
                     
-                    &>span:last-of-type{
+                    &>span:first-of-type{
                     
                         display: inline-block;
                     }
@@ -81,3 +81,4 @@
         }
     }
 }
+*/

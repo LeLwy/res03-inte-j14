@@ -19,7 +19,7 @@
 
     -Classic:
     
-    HTML:
+    --HTML:
     
     ```
     <header class="classic-header-layout bg-orange">
@@ -27,7 +27,7 @@
             <img src="https://picsum.photos/id/452/300/300" alt="Logo du site">
             <figcaption>Logo du site</figcaption>
         </figure>
-        <nav class="main-header-navbar white-links">
+        <nav class="white-links">
             <ul>
                 <li><a href="">Home<span class="fa-solid fa-arrow-right"></span></a></li>
                 <li><a href="">About Me<span class="fa-solid fa-arrow-right"></span></a></li>
@@ -35,21 +35,21 @@
                 <li><a href="">Blog<span class="fa-solid fa-arrow-right"></span></a></li>
             </ul>
         </nav>
-        <nav class="social-header-navbar white-links">
+        <nav class="white-links">
             <ul>
-                <li><a href=""><span class="fa-brands fa-facebook"></span><span>Facebook</span></a></li>
-                <li><a href=""><span class="fa-brands fa-linkedin"></span><span>Linkedin</span></a></li>
-                <li><a href=""><span class="fa-brands fa-github"></span><span>Github</span></a></li>
+                <li><a href=""><span>Facebook</span><span class="fa-brands fa-facebook"></span></a></li>
+                <li><a href=""><span>Linkedin</span><span class="fa-brands fa-linkedin"></span></a></li>
+                <li><a href=""><span>Github</span><span class="fa-brands fa-github"></span></a></li>
             </ul>
         </nav>
     </header>
     ```
     
-    CSS:
+    --CSS:
     
     ```
     .classic-header-layout{
-        
+    
         display: grid;
         grid-template-columns: .1fr .7fr .2fr;
         grid-template-row: 1fr 1fr 1fr;
@@ -79,90 +79,84 @@
             
             grid-column: 2/3;
             grid-row: 2/3;
+            
+            &>ul{
+            
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                &>li{
+                    
+                    &>a{
+                        
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        padding: 1.5vh 2vw;
+                        border-radius: 5px;
+                        transition: all 0.2s ease-out;
+                        
+                        &>span{
+                            
+                            display: none;
+                        }
+                        
+                        &:hover{
+                            
+                            border-bottom: solid 3px;
+                            border-left: solid 3px;
+                            
+                            &>span{
+                                
+                                margin-left: .5vw;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
         }
         
         &>nav:last-of-type{
             
             grid-column: 3/4;
             grid-row: 2/3;
-        }
-    }
-    
-    .main-header-navbar{
-    
-        &>ul{
             
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
+            &>ul{
             
-            &>li{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
                 
-                &>a{
+                &>li{
                     
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    padding: 1.5vh 2vw;
-                    border-radius: 5px;
-                    transition: all 0.2s ease-out;
-                    
-                    &>span{
+                    &>a{
                         
-                        display: none;
-                    }
-                    
-                    &:hover{
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        display: flex;
+                        flex-direction: row;
                         
-                        border-bottom: solid 3px;
-                        border-left: solid 3px;
-                        
-                        &>span{
+                        &>span:first-of-type{
                             
-                            margin-left: 1vw;
-                            display: inline-block;
+                            display: none;
                         }
-                    }
-                }
-            }
-        }
-    }
-    
-    .social-header-navbar{
-        
-        &>ul{
-            
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            
-            &>li{
-                
-                &>a{
-                    
-                    text-decoration: none;
-                    text-transform: capitalize;
-                    font-weight: bold;
-                    display: flex;
-                    flex-direction: row;
-                    
-                    &>span:first-of-type{
-                        
-                        margin-right: 1vw;
-                    }
-                    
-                    &>span:last-of-type{
-                        
-                        display: none;
-                    }
-                    
-                    &:hover{
                         
                         &>span:last-of-type{
+                            
+                            margin-left: .3vw;
+                        }
                         
-                            display: inline-block;
+                        &:hover{
+                            
+                            &>span:first-of-type{
+                            
+                                display: inline-block;
+                            }
                         }
                     }
                 }

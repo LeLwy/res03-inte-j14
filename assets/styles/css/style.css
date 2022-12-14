@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -89,19 +90,13 @@ table {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.classic-header-layout > nav:last-of-type {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-/******************** HEADER - NAVBARS ********************/
-.main-header-navbar > ul {
+.classic-header-layout > nav:first-of-type > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.main-header-navbar > ul > li > a {
+.classic-header-layout > nav:first-of-type > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -109,41 +104,128 @@ table {
   border-radius: 5px;
   transition: all 0.2s ease-out;
 }
-.main-header-navbar > ul > li > a > span {
+.classic-header-layout > nav:first-of-type > ul > li > a > span {
   display: none;
 }
-.main-header-navbar > ul > li > a:hover {
+.classic-header-layout > nav:first-of-type > ul > li > a:hover {
   border-bottom: solid 3px;
   border-left: solid 3px;
 }
-.main-header-navbar > ul > li > a:hover > span {
-  margin-left: 1vw;
+.classic-header-layout > nav:first-of-type > ul > li > a:hover > span {
+  margin-left: 0.5vw;
   display: inline-block;
 }
-
-.social-header-navbar > ul {
+.classic-header-layout > nav:last-of-type {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.classic-header-layout > nav:last-of-type > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.social-header-navbar > ul > li > a {
+.classic-header-layout > nav:last-of-type > ul > li > a {
   text-decoration: none;
   text-transform: capitalize;
   font-weight: bold;
   display: flex;
   flex-direction: row;
 }
-.social-header-navbar > ul > li > a > span:first-of-type {
-  margin-right: 1vw;
-}
-.social-header-navbar > ul > li > a > span:last-of-type {
+.classic-header-layout > nav:last-of-type > ul > li > a > span:first-of-type {
   display: none;
 }
-.social-header-navbar > ul > li > a:hover > span:last-of-type {
+.classic-header-layout > nav:last-of-type > ul > li > a > span:last-of-type {
+  margin-left: 0.3vw;
+}
+.classic-header-layout > nav:last-of-type > ul > li > a:hover > span:first-of-type {
   display: inline-block;
 }
 
+/******************** HEADER - NAVBARS ********************/
+/*
+.main-header-navbar{
+
+    &>ul{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &>li{
+
+            &>a{
+
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 1.5vh 2vw;
+                border-radius: 5px;
+                transition: all 0.2s ease-out;
+
+                &>span{
+
+                    display: none;
+                }
+
+                &:hover{
+
+                    border-bottom: solid 3px;
+                    border-left: solid 3px;
+
+                    &>span{
+
+                        margin-left: .5vw;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-header-navbar{
+
+    &>ul{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &>li{
+
+            &>a{
+
+                text-decoration: none;
+                text-transform: capitalize;
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+
+                &>span:first-of-type{
+
+                    display: none;
+                }
+
+                &>span:last-of-type{
+
+                    margin-left: .3vw;
+                }
+
+                &:hover{
+
+                    &>span:first-of-type{
+
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+*/
 /**************************************** BOUTONS ****************************************/
 .btn {
   padding: 1vh 1vw;
@@ -326,6 +408,17 @@ table {
 @media (prefers-color-scheme: dark) {
   .bg-orange {
     background-color: #fd790f;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .body-bg {
+    background-color: #f7f7f7;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .body-bg {
+    background-color: #465276;
   }
 }
 

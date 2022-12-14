@@ -60,6 +60,20 @@
     }
 }
 
+.body-bg{
+    
+    @media (prefers-color-scheme: light){
+        
+        background-color: $lightBackground;
+
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        background-color: $darkBackground;
+    }
+}
+
 /*
 
 $lightThemeRed : #ba0534;
