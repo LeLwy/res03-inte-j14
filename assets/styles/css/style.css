@@ -1,0 +1,139 @@
+/*COULEURS*/ /**************************************** BOUTONS ****************************************/
+.btn {
+  padding: 1vh 1vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/******************** BOUTONS NOIRS ********************/
+.btn-black {
+  color: #ffffff;
+  box-shadow: 0 0 40px 40px #242523 inset, 0 0 0 0 #242523;
+  transition: all 150ms ease-in-out;
+}
+.btn-black:hover {
+  background-color: #ffffff;
+  color: #242523;
+  box-shadow: 0 0 10px 0 #242523 inset, 0 0 10px 4px #242523;
+}
+
+/******************** BOUTONS BLANCS ********************/
+.btn-white {
+  color: #242523;
+  border: solid 1px #242523;
+  box-shadow: 0 0 40px 40px #ffffff inset, 0 0 0 0 #ffffff;
+  transition: all 150ms ease-in-out;
+}
+.btn-white:hover {
+  background-color: #242523;
+  color: #ffffff;
+  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+}
+
+/******************** BOUTONS ORANGES ********************/
+@media (prefers-color-scheme: dark) {
+  .btn-orange {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #fd790f inset, 0 0 0 0 #fd790f;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-orange:hover {
+    background-color: #fd790f;
+    box-shadow: 0 0 10px 0 #fd790f inset, 0 0 10px 4px #fd790f;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .btn-orange {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #d73b07 inset, 0 0 0 0 #d73b07;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-orange:hover {
+    background-color: #d73b07;
+    box-shadow: 0 0 10px 0 #d73b07 inset, 0 0 10px 4px #d73b07;
+  }
+}
+
+/******************** BOUTONS ROUGES ********************/
+@media (prefers-color-scheme: dark) {
+  .btn-red {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #fe4c54 inset, 0 0 0 0 #fe4c54;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-red:hover {
+    background-color: #fe4c54;
+    box-shadow: 0 0 10px 0 #fe4c54 inset, 0 0 10px 4px #fe4c54;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .btn-red {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #ba0534 inset, 0 0 0 0 #ba0534;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-red:hover {
+    background-color: #ba0534;
+    box-shadow: 0 0 10px 0 #ba0534 inset, 0 0 10px 4px #ba0534;
+  }
+}
+
+/******************** BOUTONS BLEUS ********************/
+@media (prefers-color-scheme: dark) {
+  .btn-blue {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #1499e7 inset, 0 0 0 0 #1499e7;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-blue:hover {
+    background-color: #1499e7;
+    box-shadow: 0 0 10px 0 #1499e7 inset, 0 0 10px 4px #1499e7;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .btn-blue {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #2d71e3 inset, 0 0 0 0 #2d71e3;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-blue:hover {
+    background-color: #2d71e3;
+    box-shadow: 0 0 10px 0 #2d71e3 inset, 0 0 10px 4px #2d71e3;
+  }
+}
+
+/******************** BOUTONS VERTS ********************/
+@media (prefers-color-scheme: dark) {
+  .btn-green {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #3ee8a5 inset, 0 0 0 0 #3ee8a5;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-green:hover {
+    background-color: #3ee8a5;
+    box-shadow: 0 0 10px 0 #3ee8a5 inset, 0 0 10px 4px #3ee8a5;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .btn-green {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #106942 inset, 0 0 0 0 #106942;
+    transition: all 150ms ease-in-out;
+  }
+  .btn-green:hover {
+    background-color: #106942;
+    box-shadow: 0 0 10px 0 #106942 inset, 0 0 10px 4px #106942;
+  }
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

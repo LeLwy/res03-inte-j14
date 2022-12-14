@@ -1,0 +1,74 @@
+.bg-white{
+    
+    background-color: $white;
+}
+
+.bg-black{
+    
+    background-color: $black;
+}
+
+.bg-red{
+    
+    @media (prefers-color-scheme: light){
+        
+        background-color: $lightThemeRed;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        background-color: $darkThemeRed;
+    }
+}
+
+.bg-blue{
+    
+    @media (prefers-color-scheme: light){
+        
+        background-color: $lightThemeBlue;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        background-color: $darkThemeBlue;
+    }
+}
+
+.bg-green{
+    
+    @media (prefers-color-scheme: light){
+        
+        background-color: $lightThemeGreen;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        background-color: $darkThemeGreen;
+    }
+}
+
+.bg-orange{
+    
+    @media (prefers-color-scheme: light){
+        
+        background-color: $lightThemeOrange;
+    }
+    
+    @media (prefers-color-scheme: dark){
+        
+        background-color: $darkThemeOrange;
+    }
+}
+
+
+$lightThemeRed : #ba0534;
+$lightThemeBlue : #2d71e3;
+$lightThemeGreen : #106942;
+$lightThemeOrange : #d73b07;
+
+$darkThemeGreen: #3ee8a5;
+$darkThemeOrange : #fd790f;
+$darkThemeBlue : #1499e7;
+$darkThemeRed : #fe4c54;
+
+@media (prefers-color-scheme: dark)

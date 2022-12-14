@@ -1,0 +1,171 @@
+/**************************************** BOUTONS ****************************************/
+
+.btn{
+    
+    padding: 1vh 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/******************** BOUTONS NOIRS ********************/
+
+.btn-black{
+    
+    
+    color: $white;
+    box-shadow: 0 0 40px 40px $black inset, 0 0 0 0 $black;
+    transition: all 150ms ease-in-out;
+    
+    &:hover{
+        
+        background-color: $white;
+        color: $black;
+        box-shadow: 0 0 10px 0 $black inset, 0 0 10px 4px $black;
+    }
+}
+
+/******************** BOUTONS BLANCS ********************/
+
+.btn-white{
+    
+    color: $black;
+    border: solid 1px $black;
+    box-shadow: 0 0 40px 40px $white inset, 0 0 0 0 $white;
+    transition: all 150ms ease-in-out;
+    
+    &:hover{
+        
+        background-color: $black;
+        color: $white;
+        box-shadow: 0 0 10px 0 $white inset, 0 0 10px 4px $white;
+    }
+}
+
+/******************** BOUTONS ORANGES ********************/
+
+.btn-orange{
+    
+    @media (prefers-color-scheme: dark){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $darkThemeOrange inset, 0 0 0 0 $darkThemeOrange;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $darkThemeOrange;
+            box-shadow: 0 0 10px 0 $darkThemeOrange inset, 0 0 10px 4px $darkThemeOrange;
+        }
+    }
+    
+    @media (prefers-color-scheme: light){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $lightThemeOrange inset, 0 0 0 0 $lightThemeOrange;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $lightThemeOrange;
+            box-shadow: 0 0 10px 0 $lightThemeOrange inset, 0 0 10px 4px $lightThemeOrange;
+        }
+    }
+}
+
+/******************** BOUTONS ROUGES ********************/
+
+.btn-red{
+    
+    @media (prefers-color-scheme: dark){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $darkThemeRed inset, 0 0 0 0 $darkThemeRed;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $darkThemeRed;
+            box-shadow: 0 0 10px 0 $darkThemeRed inset, 0 0 10px 4px $darkThemeRed;
+        }
+    }
+    
+    @media (prefers-color-scheme: light){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $lightThemeRed inset, 0 0 0 0 $lightThemeRed;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $lightThemeRed;
+            box-shadow: 0 0 10px 0 $lightThemeRed inset, 0 0 10px 4px $lightThemeRed;
+        }
+    }
+}
+
+/******************** BOUTONS BLEUS ********************/
+
+.btn-blue{
+    
+    @media (prefers-color-scheme: dark){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $darkThemeBlue inset, 0 0 0 0 $darkThemeBlue;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $darkThemeBlue;
+            box-shadow: 0 0 10px 0 $darkThemeBlue inset, 0 0 10px 4px $darkThemeBlue;
+        }
+    }
+    
+    @media (prefers-color-scheme: light){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $lightThemeBlue inset, 0 0 0 0 $lightThemeBlue;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $lightThemeBlue;
+            box-shadow: 0 0 10px 0 $lightThemeBlue inset, 0 0 10px 4px $lightThemeBlue;
+        }
+    }
+}
+
+/******************** BOUTONS VERTS ********************/
+
+.btn-green{
+    
+    @media (prefers-color-scheme: dark){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $darkThemeGreen inset, 0 0 0 0 $darkThemeGreen;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $darkThemeGreen;
+            box-shadow: 0 0 10px 0 $darkThemeGreen inset, 0 0 10px 4px $darkThemeGreen;
+        }
+    }
+    
+    @media (prefers-color-scheme: light){
+
+        color: $white;
+        box-shadow: 0 0 40px 40px $lightThemeGreen inset, 0 0 0 0 $lightThemeGreen;
+        transition: all 150ms ease-in-out;
+        
+            &:hover{
+            
+            background-color: $lightThemeGreen;
+            box-shadow: 0 0 10px 0 $lightThemeGreen inset, 0 0 10px 4px $lightThemeGreen;
+        }
+    }
+}
