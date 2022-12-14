@@ -17,9 +17,9 @@
 
 ### Headers:
 
-    -Classic:
+#### Classique:
     
-    --HTML:
+    HTML:
     
     ```
     <header class="classic-header-layout bg-orange">
@@ -45,7 +45,7 @@
     </header>
     ```
     
-    --CSS:
+    CSS:
     
     ```
     .classic-header-layout{
